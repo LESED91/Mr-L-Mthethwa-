@@ -1,38 +1,151 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Synthetic Journey</title>
+<title>Mr Mthethwa - Synthetic Trading Journey</title>
+
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f0f0f;color:#fff;line-height:1.6}
-header{padding:40px;text-align:center;background:#000}
-header h1{font-size:42px;margin:0}
-header p{color:#aaa}
-section{max-width:900px;margin:auto;padding:40px 20px}
-h2{color:#f5c542}
-.card{background:#1a1a1a;padding:25px;margin-bottom:25px;border-radius:10px}
-footer{text-align:center;padding:20px;color:#777;border-top:1px solid #222}
+
+body{
+font-family: Arial;
+margin:0;
+background:#0f0f0f;
+color:white;
+text-align:center;
+}
+
+header{
+background:black;
+padding:25px;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+margin:20px;
+border-radius:10px;
+}
+
+input{
+width:90%;
+padding:12px;
+margin:10px;
+border:none;
+border-radius:6px;
+}
+
+button{
+padding:12px 25px;
+background:#f5c542;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+form{
+display:none;
+}
+
+.active{
+display:block;
+}
+
+.toggle{
+color:#f5c542;
+cursor:pointer;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+color:gray;
+}
+
 </style>
 </head>
-<body><header>
-<h1>My Synthetic Journey</h1>
-<p>The road of mastering volatility trading</p>
-</header><section><div class="card">
-<h2>The Beginning</h2>
-<p>My journey into synthetic trading started with curiosity. Watching volatility charts move at insane speeds made me want to understand how the market thinks. At first it looked like chaos, candles moving fast and unpredictably. But something about it pulled me in.</p>
-</div><div class="card">
-<h2>Learning The Game</h2>
-<p>Trading humbled me quickly. Losses came before wins. I realized this world requires discipline, patience, and strong psychology. I spent hours studying charts, understanding volatility indices, support and resistance, and market momentum.</p>
-</div><div class="card">
-<h2>The Breakthrough</h2>
-<p>Eventually the charts started speaking a language I could understand. I stopped chasing trades and started waiting for clean setups. My strategy became clearer and trading became less emotional and more calculated.</p>
-</div><div class="card">
-<h2>Where I Am Now</h2>
-<p>Today I continue trading synthetic indices while sharpening my edge every day. The journey has built discipline, resilience, and focus. Trading is no longer just about profit, it's about mastering myself.</p>
-</div><div class="card">
-<h2>The Vision</h2>
-<p>The goal is financial freedom and inspiring others who come from nothing but want to learn the markets. The charts never stop moving and neither does the journey.</p>
-</div></section><footer>
-<p>© My Synthetic Journey</p>
-</footer></body>
+
+<body>
+
+<header>
+<h1>Mr Mthethwa</h1>
+<p>My Synthetic Trading Journey</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Login</h2>
+
+<form id="loginForm" class="active">
+
+<input type="text" placeholder="Username">
+
+<input type="password" placeholder="Password">
+
+<br>
+
+<button type="button">Login</button>
+
+<p class="toggle" onclick="showSignup()">Don't have an account? Sign up</p>
+
+</form>
+
+<form id="signupForm">
+
+<h2>Create Account</h2>
+
+<input type="text" placeholder="Username">
+
+<input type="email" placeholder="Email">
+
+<input type="password" placeholder="Password">
+
+<br>
+
+<button type="button">Sign Up</button>
+
+<p class="toggle" onclick="showLogin()">Already have an account? Login</p>
+
+</form>
+
+</div>
+
+<div class="card">
+<h2>My Story</h2>
+
+<p>
+My journey into synthetic trading started with curiosity.
+Over time I learned discipline, patience and strategy.
+This platform shares my experience and growth in the markets.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© Mr Mthethwa
+</footer>
+
+<script>
+
+function showSignup(){
+document.getElementById("loginForm").classList.remove("active")
+document.getElementById("signupForm").classList.add("active")
+}
+
+function showLogin(){
+document.getElementById("signupForm").classList.remove("active")
+document.getElementById("loginForm").classList.add("active")
+}
+
+</script>
+
+</body>
 </html>
