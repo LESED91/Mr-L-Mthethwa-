@@ -114,6 +114,7 @@ color:gray;
 
 </form>
 
+
 </div>
 
 <div class="card">
@@ -131,6 +132,256 @@ This platform shares my experience and growth in the markets.
 
 <footer>
 © Mr Mthethwa
+</footer>
+
+<script>
+
+function showSignup(){
+document.getElementById("loginForm").classList.remove("active")
+document.getElementById("signupForm").classList.add("active")
+}
+
+function showLogin(){
+document.getElementById("signupForm").classList.remove("active")
+document.getElementById("loginForm").classList.add("active")
+}
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr Mthethwa Trading</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#0f0f0f;
+color:white;
+}
+
+header{
+background:black;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#1a1a1a;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:#f5c542;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.section{
+padding:25px;
+text-align:center;
+}
+
+.card{
+background:#1a1a1a;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+input{
+width:85%;
+padding:12px;
+margin:8px;
+border:none;
+border-radius:6px;
+}
+
+button{
+padding:12px 25px;
+background:#f5c542;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+form{
+display:none;
+}
+
+.active{
+display:block;
+}
+
+.toggle{
+color:#f5c542;
+cursor:pointer;
+}
+
+.dashboard-box{
+background:#111;
+padding:30px;
+border-radius:10px;
+margin:20px;
+}
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+color:gray;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Mr Mthethwa</h1>
+<p>Synthetic Trading Journey</p>
+</header>
+
+<nav>
+<a href="#login">Login</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#strategy">Strategy</a>
+<a href="#vip">VIP Signals</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="section" id="login">
+
+<div class="card">
+
+<h2>Login</h2>
+
+<form id="loginForm" class="active">
+
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+
+<br>
+
+<button type="button">Login</button>
+
+<p class="toggle" onclick="showSignup()">Create account</p>
+
+</form>
+
+<form id="signupForm">
+
+<h2>Sign Up</h2>
+
+<input type="text" placeholder="Username">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+
+<br>
+
+<button type="button">Register</button>
+
+<p class="toggle" onclick="showLogin()">Already have account</p>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="section" id="dashboard">
+
+<h2>Trading Dashboard</h2>
+
+<div class="dashboard-box">
+<p>Account Balance</p>
+<h3>$12,450</h3>
+</div>
+
+<div class="dashboard-box">
+<p>Today's Profit</p>
+<h3>$1,240</h3>
+</div>
+
+<div class="dashboard-box">
+<p>Active Market</p>
+<h3>Volatility 75 Index</h3>
+</div>
+
+</div>
+
+<div class="section" id="strategy">
+
+<h2>Trading Strategy</h2>
+
+<div class="card">
+
+<p>
+My synthetic trading strategy focuses on volatility movement,
+market structure and patience. I analyze volatility indices,
+support and resistance levels and market momentum before
+entering a trade.
+</p>
+
+<p>
+Discipline and risk management are the foundation of
+consistent trading performance.
+</p>
+
+</div>
+
+</div>
+
+<div class="section" id="vip">
+
+<h2>VIP Signals</h2>
+
+<div class="card">
+
+<h3>Latest Signal</h3>
+
+<p>Market: Volatility 75</p>
+<p>Direction: BUY</p>
+<p>Entry: 3582.45</p>
+<p>Target: 3610.00</p>
+
+<button>Join VIP</button>
+
+</div>
+
+</div>
+
+<div class="section" id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<input placeholder="Your name">
+<input placeholder="Email">
+<input placeholder="Message">
+
+<br>
+
+<button>Send Message</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© Mr Mthethwa</p>
+
 </footer>
 
 <script>
